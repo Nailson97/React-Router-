@@ -1,10 +1,17 @@
 import './App.css'
 import React from 'react'
+import { BrowserRouter as Router} from 'react-router-dom'
+import Content from '../components/layout/Content'
+import Menu from '../components/layout/Menu'
+
 
 export default function App (props) {
     return (
         <div className="App">
-            <h1>Component App</h1>
+           <Router> 
+                <Menu/>
+                <Content/>
+            </Router>    
         </div>
     )
 }
